@@ -1,0 +1,116 @@
+/* Background space */
+body {
+    background-image: url(../img/background-home.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 80%;
+}
+/* Main introduction with texts and button */
+main{
+    padding: 32px 0;
+    flex-direction: column;
+}
+#main-introduction{
+    width: 100%;
+}
+#introduction-texts{
+    margin-bottom: 42px;
+    width: 35%;
+}
+#introduction-texts h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: #5C4D75;
+    margin-bottom: 20px;
+}
+#introduction-texts p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #545454;
+}
+#introduction-button a{
+    transition: 0.4s;
+    font-family: 'MontSerrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 16px 30px;
+    width: 290px;
+    background-color: #ff8c00;
+    box-shadow: 4px 6px 0px #5C4D75;
+    align-items: center;
+    justify-content: space-between;
+}
+#introduction-button a:hover{
+    transition: 0.5s;
+    background-color: #5C4D75;
+    box-shadow: 4px 6px 0px #ff8c00;
+    border: 1px solid #ff8c00;
+    cursor: pointer;
+    width: 310px;
+}
+#introduction-button a > i{
+    font-size: 25px;
+}
+/* Responsivity */
+/* 1 BreakPoint 1024px */
+@media screen and (max-width: 1024px){
+    #main-introduction{
+        text-align: center;
+    }
+    #introduction-texts {
+        width: 100%;
+    }
+    #introduction-texts h1{
+        font-size: 60px;
+    }
+    #introduction-texts p{
+        font-size: 20px;
+    }
+    #introduction-button{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    body{
+        background-size: 100%;
+    }
+}
+/* 2 BreakPoint 768px */
+@media screen and (max-width: 768px){
+    #main-introduction{
+        text-align: center;
+    }
+    #introduction-texts {
+        width: 100%;
+    }
+    #introduction-texts h1{
+        font-size: 60px;
+    }
+    #introduction-texts p{
+        font-size: 20px;
+    }
+}
+/* 3 BreakPoint 425px */
+@media screen and (max-width: 425px){
+    #main-introduction{
+        text-align: center;
+    }
+    #introduction-texts {
+        width: 100%;
+    }
+    #introduction-texts h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    #introduction-texts p{
+        font-size: 18px;
+    }
+    #introduction-button a{
+        font-size: 18px;
+        padding: 14px 12px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f8f47e19bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/more.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/page-icon.png">
+    <title>Astronomous - Planetas</title>
+</head>
+<body >
+    <header class="wrapper flex">
+        <div id="header-socials-media">
+            <a href="https://github.com/renato-roca-dev"  target="blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/renato-roca-dev" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <nav>
+            <ul class="flex">
+                <a href="../index.html"><li>Início</li></a>
+                <a href="../pages/planets.html"><li>Explorar</li></a>
+                <a href="more.html"><li>Planetas</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div id="planets-cards" class="flex">
+            <button type="button" id="planet-sun" class="button-select-planets" onclick="changePageSun()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/sun-image.png" alt="Imagem da estrela solar">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Sol</h2>
+                    </div>
+                </div>
+            </button>
+            <button type="button" id="planet-mercury" class="button-select-planets" onclick="changePageMercury()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/mercury-image.png" alt="Imagem do planeta Mercúrio">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Mercúrio</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-venus" class="button-select-planets" onclick="changePageVenus()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/venus-image.png" alt="Imagem do planeta Vênus">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Vênus</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-earth" class="button-select-planets" onclick="changePageEarth()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/earth-image.png" alt="Imagem do planeta Terra">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Terra</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-moon" class="button-select-planets" onclick="changePageMoon()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/moon-image.png" alt="Imagem da Lua">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Lua</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-mars" class="button-select-planets" onclick="changePageMars()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/mars-image.png" alt="Imagem do planeta Marte">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Marte</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-jupiter" class="button-select-planets" onclick="changePageJupiter()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/jupiter-image.png" alt="Imagem do planeta Júpiter">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Júpiter</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-saturn" class="button-select-planets" onclick="changePageSaturn()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/saturn-image.png" alt="Imagem do planeta Saturno">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Saturno</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-uranus" class="button-select-planets" onclick="changePageUranus()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/uranos-image.png" alt="Imagem do planeta Urano">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Urano</h2>
+                    </div>
+                </div>
+            </button>
+            <button id="planet-netune" class="button-select-planets" onclick="changePageNeptune()">
+                <div class="planet-card">
+                    <div class="planet-card-image">
+                        <img src="../img/netune-image.png" alt="Imagem do planeta Netuno">
+                    </div>
+                    <div class="planet-card-text">
+                        <h2>Netuno</h2>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="../script-planet.js"></script>
+</body>
+</html>

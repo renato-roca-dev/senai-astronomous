@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&family=Montserrat:wght@400;700&family=Rubik:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Header */
+header{
+    padding: 50px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-socials-media i{
+    color: #5C4D75;
+    font-size: 40px;
+    margin: 0px 8px 0px 8px;
+}
+#header-socials-media i:hover{
+    color: #F8AA4D;
+}
+nav{
+    width: 500px;
+}
+nav ul{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul a{
+    width: fit-content;
+}
+nav ul a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F8AA4D;
+}
+nav ul li{
+    font-family: 'Rubik', sans-serif;
+    color: #5C4D75;
+    font-weight: 400;
+    font-size: 24px;
+}
+/* Responsivity */
+/* 1 BreakPoint 1024px */
+@media screen and (max-width: 1024px){
+    nav{
+        width: 300px;
+    }
+}
+/* 2 BreakPoint 768px */
+@media screen and (max-width: 768px){
+    nav{
+        width: 300px;
+    }
+}
+/* 3 BreakPoint 425px */
+@media screen and (max-width: 514px){
+    header{
+        padding: 50px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        margin-top: 20px;
+        width: 100%;
+    }
+}

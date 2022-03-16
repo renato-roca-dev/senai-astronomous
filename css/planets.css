@@ -1,0 +1,215 @@
+/* Background space */
+body {
+    background-image: url(../img/background-select.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+}
+/* Main with planet select and cards */
+/* Main planets name */
+main{
+    padding: 16px 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Main side with planet selection */
+#planet-name-side{
+    text-align: center;
+    padding: 16px 0;
+    width: fit-content;
+}
+#planet-name-texts h1{
+    color: #5C4D75;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+}
+#planet-name-texts h2{
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#planet-name-image{
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#planet-name-image img{
+    width: 100%;
+}
+#planet-name-buttons{
+    margin: 0 auto;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns_select{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: #5C4D75;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    transition: 0.3s;
+}
+.btns_select:hover{
+    transition: 0.3s;
+    font-size: 42px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    color: #F36302;
+}
+/* Main side with cards information */
+#planet-cards-side{
+    width: 720px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.planet-card-top{
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    height: 380px;
+    padding: 12px;
+    background-color: white;
+}
+#list-curiositys{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+.planet-card-top h3, .planet-card-bottom h3{
+    color: #5C4D75;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.planet-card-top ul li{
+    color: #545454;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+#list-articles{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 310px;
+}
+.planet-card-top a{
+    color: #F36302;
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+.planet-card-top a:hover{
+    text-decoration: underline;
+}
+.planet-card-bottom{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 720px;
+    height: fit-content;
+    padding: 12px;
+    background-color: white;
+}
+.planet-card-bottom p{
+    color: #545454;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+/* Responsivity */
+/* 1 BreakPoint 1440px */
+@media screen and (max-width: 1440px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #planet-name-side {
+        margin-bottom: 40px;
+    }
+}
+/* 2 BreakPoint 1024px */
+@media screen and (max-width: 1024px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #planet-name-side {
+        margin-bottom: 40px;
+    }
+    #planet-cards-side {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .planet-card-bottom {
+        width: 80%;
+        min-width: 340px;
+        height: fit-content;
+    }
+}
+/* 3 BreakPoint 425px */
+@media screen and (max-width: 425px){
+    .planet-card-top {
+        width: 300px;
+        height: 450px;
+    }
+    #list-curiositys{
+        height: 350px;
+    }
+    #planet-name-image {
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    #list-articles {
+        height: 225px;
+    }
+    .card02{
+        height: 300px;
+    }
+    .planet-card-bottom {
+        width: 80%;
+        min-width: 300px;
+        height: fit-content;
+    }
+}
+/* 4 BreakPoint 320px */
+@media screen and (max-width: 320px){
+    .planet-card-top {
+        width: 250px;
+    }
+    .planet-card-bottom {
+        width: 80%;
+        min-width: 250px;
+        height: fit-content;
+    }
+    .planet-card-top h3, .planet-card-bottom h3{
+        font-size: 20px;
+    }
+    .planet-card-top ul li{
+        font-size: 18px;
+    }
+    .planet-card-top a{
+        font-size: 19px;
+    }
+    .planet-card-bottom p{
+        font-size: 20px;
+    }
+}

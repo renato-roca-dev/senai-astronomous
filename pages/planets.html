@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f8f47e19bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/planets.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/page-icon.png">
+    <title>Astronomous - Explorar</title>
+</head>
+<body onload="checkPage()">
+    <header class="wrapper flex">
+        <div id="header-socials-media">
+            <a href="https://github.com/renato-roca-dev"  target="blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/renato-roca-dev" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <nav>
+            <ul class="flex">
+                <a href="../index.html"><li>Início</li></a>
+                <a href="planets.html"><li>Explorar</li></a>
+                <a href="more.html"><li>Planetas</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrapper flex">
+        <div id="planet-name-side">
+            <div id="planet-name-texts">
+                <h1 id="planet-name">Sol</h1>
+                <h2 id="planet-category">Estrela anã</h2>
+            </div>
+            <div id="planet-name-image">
+                <img src="../img/sun-image.png" id="planet-image" alt="Foto dos planetas solares">
+            </div>
+            <div id="planet-name-buttons" class="flex">
+                <button type="button" id="btn_previous" class="btns_select" onclick="previous()"><i class="fa-solid fa-left-long"></i></button>
+                <button type="button" id="btn_next" class="btns_select" onclick="next()"><i class="fa-solid fa-right-long"></i></button>
+            </div>
+        </div>
+        <div id="planet-cards-side" class="flex">
+            <div class="planet-card-top">
+                <h3>Curiosidades</h3>
+                <ul id="list-curiositys" class="flex">
+                    <li id="curiosityOne">Estrela central do nosso Sistema solar;</li>
+                    <li id="curiosityTwo">Todos os planetas, asteroides, cometas e poeira giram ao seu redor;</li>
+                    <li id="curiosityThree">Possui 99,86% de toda a massa do Sistema Solar;</li>
+                    <li id="curiosityFour">Formado principalmente por hidrogênio e hélio.</li>
+                </ul>
+                <a href="https://www.natgeo.pt/ciencia/2018/05/o-sol-factos-e-curiosidades" target="blank" id="knowMore">Clique aqui para saber mais</a>
+            </div>
+            <div class="planet-card-top card02">
+                <h3>Artigos</h3>
+                <ul id="list-articles" class="flex">
+                    <li><a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" target="blank" id="articleOne">Artigo em inglês sobre o Sol</a></li>
+                    <li><a href="http://www.sbfisica.org.br/rbef/pdf/v22a10.pdf" target="blank" id="articleTwo">Artigo em português</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=tBLLuZvuyYw" target="blank" id="articleThree">Documentário no Youtube sobre a estrela</a></li>
+                </ul>
+            </div>
+            <div class="planet-card-bottom">
+                <h3>Informação básicas</h3>
+                <p id="basics-info">Composto principalmente por hidrogênio e hélio, além de ferro, níquel, oxigênio, silício, carbono, nitrogênio, enxofre. Sua temperatura varia, podendo atingir até 5.505 graus Celsius na superfície e 16 milhões de graus Celsius no núcleo.
+                O Sol é de fundamental importância para a manutenção da vida terrestre, fornecendo luz, calor, energia, além de ser responsável pela evaporação e por diversos processos biológicos em plantas e animais.
+                O Sol também possui uma estrutura, sendo ela: Núcleo, Fotosfera, Cromosfera e Coroa.</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

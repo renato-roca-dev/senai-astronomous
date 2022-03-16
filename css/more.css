@@ -1,0 +1,79 @@
+/* Background space */
+body {
+    background-image: url(../img/background-more-2.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
+}
+/* Planets cards */
+main{
+    padding: 32px 0;
+}
+#planets-cards{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.button-select-planets{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+}
+.button-select-planets:hover .planet-card-image{
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(360deg);
+}
+.button-select-planets:hover .planet-card{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    border-bottom: 4px solid #5C4D75;
+}
+.button-select-planets:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #ff8c00;
+}
+.planet-card{
+    width: 320px;
+    height: 285px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.planet-card-image{
+    width: 205px;
+    height: 205px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    transition: transform .8s ease-in-out;
+}
+.planet-card-image img{
+    width: 100%;
+}
+.planet-card-text{
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #5C4D75;
+}
+/* Responsivity */
+/* 1 BreakPoint 425px */
+@media screen and (max-width: 425px){
+    .planet-card{
+        width: 280px;
+        height: 255px;
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+/* 2 BreakPoint 375px */
+@media screen and (max-width: 375px){
+    .planet-card {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
