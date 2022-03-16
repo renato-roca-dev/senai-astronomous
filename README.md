@@ -4,7 +4,7 @@ Projeto feito no SENAI Informática no curso de Desenhista de páginas web, onde
 
 ## :satellite: Sobre o projeto :satellite:
 
-Site feito com o intuito de propagar conhecimento de astronomia, onde possa ser feito a interação com os planetas sistema solar com informações, artigos e curiosidades dos planetas, onde também é possível clicar em links de artigos para maiores informações.
+Site feito com o intuito de propagar conhecimento de astronomia, onde possa ser feito a interação entre os planetas do sistema solar com informações, artigos e curiosidades, onde também é possível clicar em links de artigos para maiores informações.
 
 ![Web](https://github.com/renato-roca-dev/senai-astronomous/blob/master/img/explore-page.PNG)
 
